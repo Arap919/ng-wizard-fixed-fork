@@ -1,0 +1,29 @@
+{
+  "name": "@ff/ng-wizard-fork",
+  "description": "Angular ng-wizard - Angular wizard | stepper",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+http://gitlab.bmservice.local/FF_NPM/ff-ng-wizard-fork"
+  },
+  "publishConfig": {
+    "registry": "http://npm.bmservice.local:4873/"
+  },
+  "author": "FinFlow",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^8.2.5",
+    "@angular/core": "^8.2.5"
+  },
+  "keywords": [
+    "angular",
+    "wizard",
+    "stepper",
+    "ng-wizard",
+    "wizard-component",
+    "stepper-component",
+    "step-wizard",
+    "bootstrap"
+  ]
+}
