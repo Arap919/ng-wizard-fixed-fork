@@ -1,0 +1,70 @@
+{
+  "name": "@ff/ng-wizard",
+  "version": "1.0.0",
+  "description": "ng-wizard is a stepper / wizard component that you can use in your Angular applications",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve -o --port=4201",
+    "build": "ng build --aot",
+    "lib:build": "ng build ng-wizard --prod",
+    "lib:themes": "mkdir dist\\ng-wizard\\themes && copy src\\ng-wizard\\themes\\*.css dist\\ng-wizard\\themes",
+    "lib:files": "copy README.md dist\\ng-wizard && copy LICENSE dist\\ng-wizard",
+    "lib:pack": "cd dist/ng-wizard && npm pack",
+    "lib": "npm run lib:build && npm run lib:themes && npm run lib:files && npm run lib:pack",
+    "test": "ng test ng-wizard",
+    "lint": "ng lint ng-wizard",
+    "e2e": "ng e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://gitlab.bmservice.local/FF_NPM/ff-ng-wizard-fork"
+  },
+  "publishConfig": {
+    "registry": "http://npm.bmservice.local:4873/"
+  },
+  "dependencies": {
+    "@angular/animations": "8.2.14",
+    "@angular/common": "8.2.14",
+    "@angular/compiler": "8.2.14",
+    "@angular/core": "8.2.14",
+    "@angular/forms": "8.2.14",
+    "@angular/platform-browser": "8.2.14",
+    "@angular/platform-browser-dynamic": "8.2.14",
+    "@angular/router": "8.2.14",
+    "bootstrap": "4.4.1",
+    "core-js": "3.4.3",
+    "rxjs": "6.5.5",
+    "tslib": "1.11.1",
+    "zone.js": "0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "0.803.26",
+    "@angular-devkit/build-ng-packagr": "0.803.26",
+    "@angular/cli": "8.3.26",
+    "@angular/compiler-cli": "8.2.14",
+    "@angular/language-service": "8.2.14",
+    "@types/jasmine": "3.5.10",
+    "@types/jasminewd2": "2.0.8",
+    "@types/node": "13.13.2",
+    "codelyzer": "5.2.2",
+    "jasmine-core": "3.5.0",
+    "jasmine-spec-reporter": "5.0.1",
+    "karma": "5.2.3",
+    "karma-chrome-launcher": "3.1.0",
+    "karma-coverage-istanbul-reporter": "2.1.1",
+    "karma-jasmine": "3.1.1",
+    "karma-jasmine-html-reporter": "1.5.3",
+    "ng-packagr": "9.0.3",
+    "protractor": "5.4.4",
+    "ts-node": "8.9.0",
+    "tslint": "6.1.1",
+    "typescript": "3.5.3"
+  },
+  "files": [
+    "dist/*",
+    "src/.npmrc",
+    "tsconfig.json",
+    "tslint.json",
+    "src/.npmignore"
+  ]
+}
